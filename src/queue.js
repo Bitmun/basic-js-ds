@@ -15,13 +15,19 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 class Queue {
 
+  // конструктор
+  constructor(...elements) {
+    // инициализация элементов очереди элементами
+    this.elements = [...elements];
+  }
+
   getUnderlyingList() {
     throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
   }
 
-  enqueue(/* value */) {
-    throw new NotImplementedError('Not implemented');
+  enqueue(...args) {
+    return this.elements.push(...args);
     // remove line with error and write your code here
   }
 

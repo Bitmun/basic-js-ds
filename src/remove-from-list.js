@@ -25,7 +25,7 @@ const { ListNode } = require('../extensions/list-node.js');
 function removeKFromList(l, k) {
   
 throw new NotImplementedError('Not implemented');
-
+  
 
 }
 
